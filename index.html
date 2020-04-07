@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <title>ポートフォリオ</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/swiper.min.js"></script>
+        <script src="js/anime.min.js"></script>
+    </head>
+    <body id="body">
+        <p id="tabcontrol">
+            <a href="#tabpage1">TOP</a>
+            <a href="#tabpage2">WORK</a>
+            <a href="#tabpage3">PROFILE</a>
+            <a href="#tabpage4">SKILL</a>
+            <a href="#tabpage5">CONTACT</a>
+         </p>
+        <div class="top" id="tabpage1">
+            <div style="display: none;" id="message" class="message"><br>WELCOME!</div>
+            <div style="display: none;" class="name">AKIHIRO'S</div>
+            <div style="display: none;" class="lead">portforio</div>
+            <!--<div class="arrow"><a href="#work"><i class="fas fa-chevron-circle-down"></i></a></div>-->
+        </div>
+        <div class="work" id="tabpage2">
+            <h2 id="work">WORK</h2>
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="image/site1.jpg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="image/site2.jpg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="image/site3.jpg"></a></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div id="tabpage3" class="profile" data-0="opacity:0;" data-bottom-top="transform:translateX(-200px);" data-center-center="transform:translateX(0px); opacity:1;">
+            <h2>PROFILE</h2>
+            <div class="flex">
+                <div class="profile_img"></div>
+                <div class="profile_txt">
+                    <p>アパレル業界からエンジニアに転職。主にVB.NETで社内システムの開発、改修を行ってました。現在はフリーでHP作成などをしています。</p>
+                </div>
+            </div>
+        </div>
+        <div id="tabpage4" class="skill" data-0="opacity:0;" data-bottom-top="transform:translateX(200px);" data-center-center="transform:translateX(0px); opacity:1;">
+            <h2>SKILL</h2>
+            <table>
+                <tr>
+                    <th>HTML</th>
+                    <td><i class="fas fa-star"></i>★★★★★<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <td><i class="fas fa-star"></i>★★★★☆<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                </tr>
+                <tr>
+                    <th>JavaScript</th>
+                    <td><i class="fas fa-star"></i>★★★☆☆<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                </tr>
+                <tr>
+                    <th>jQuery</th>
+                    <td><i class="fas fa-star"></i>★★★☆☆<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                </tr>
+                <tr>
+                    <th>VB.NET</th>
+                    <td><i class="fas fa-star"></i>★★★★★<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                </tr>
+                <tr>
+                    <th>Ruby</th>
+                    <td><i class="fas fa-star"></i>★★☆☆☆<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></td>
+                </tr>
+                <tr>
+                    <th>Ruby on rails</th>
+                    <td><i class="fas fa-star"></i>★★☆☆☆<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></td>
+                </tr>
+                <tr>
+                    <th>python</th>
+                    <td><i class="fas fa-star"></i>★★☆☆☆<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></td>
+                </tr>
+            </table>
+        </div>
+        <div id="tabpage5" class="contact" data-0="opacity:0;" data-bottom-top="transform:scale(0) rotate(0deg);" data-center-center="transform:scale(1) rotate(360deg); opacity:1;">
+            <h2>CONTACT</h2>
+            <h4>ご依頼・お問い合わせ</h4>
+            <a href="#"><div class="mail"><i class="far fa-envelope"></i> mail：akihiro.otsuka.pr@gmail.com</div></a>
+        <!--<a href="#"><div class="twitter"><i class="fab fa-twitter"></i> twitter</div></a>-->
+        </div>
+        
+
+     
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    effect: 'coverflow',
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    coverflowEffect: {
+        slideShadows: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+})
+
+
+/*skrollr.init({
+    beforerender: function(data) {
+        return data.curTop > data.lastTop;
+    }
+});
+$(function() {
+  $('a[href^="#"]').click(function() {
+      var speed = 400;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});*/
+</script>
+    </body>
+</html>

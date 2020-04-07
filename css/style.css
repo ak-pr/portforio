@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+
+body {
+font-family: serif;
+}
+
+.top{
+    background-image: url(../image/back.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+@keyframes fade-in {
+0% {opacity: 0}
+100% {opacity: 1}
+}
+
+.message {
+    width: 600px;
+    text-align: center;
+    font-size: 50px;
+    margin: 10px auto 0px auto;
+    display: none;
+    }
+
+.name {
+width: 600px;
+text-align: center;
+font-size: 50px;
+margin: 100px auto 0px auto;
+display: none;
+}
+
+.lead {
+width: 600px;
+text-align: center;
+font-family: serif;
+font-size: 32px;
+margin: auto;
+display: none;
+}
+
+
+.arrow {
+width: 600px;
+text-align: center;
+font-size: 88px;
+margin: 200px auto 0px auto;
+}
+
+.work {
+width: 960px;
+text-align: center;
+margin: 250px auto 0px auto;
+}
+
+.swiper-container {
+width: 960px;
+height: 456px;
+}
+
+.swiper-slide a img:hover {
+opacity: 0.6;
+}
+
+ul{
+list-style: none;
+}
+
+.profile {
+width: 600px;
+text-align: center;
+margin: 300px auto 0px auto;
+}
+
+.flex {
+display: flex;
+}
+
+.profile_img {
+width: 200px;
+height: 200px;
+background-image: url(../image/profile.jpg);
+border-radius: 50%;
+}
+
+.profile_txt {
+width: 400px;
+margin-left: 30px;
+text-align: left
+}
+
+.skill {
+width: 600px;
+text-align: center;
+margin: 250px auto 0px auto;
+}
+
+table, td, th {
+border-collapse: collapse;
+border: 1px #707070 solid;
+}
+
+table {
+margin: auto;
+}
+
+th {
+width: 200px;
+padding: 10px;
+font-weight: bold;
+}
+
+td {
+width: 400px;
+padding: 10px;
+color: #000080;
+}
+
+.contact {
+width: 600px;
+text-align: center;
+margin: 250px auto 0px auto;
+}
+
+.mail {
+font-size: 20px;
+}
+
+.twitter {
+font-size: 20px;
+margin-top: 10px;
+}
+
+a {
+text-decoration: none;
+color: #333333;
+}
+
+/* ▼タブ */
+#tabcontrol a {
+    display: inline-block;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.75em 0.75em 0 0;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    position: relative;
+ }
+
+#tabcontrol a:hover {
+    text-decoration: underline;
+ }
+
+
+ @media screen and (max-width:480px){
+    /*画面幅が480pxまでの時*/
+
+#tabcontrol a {
+    display: inline-block;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.75em 0.75em 0 0;
+    padding: 0.3em 0.1em;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.top {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background-image: url(../image/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.message {
+      width: 300px;
+      text-align: center;
+      font-size: 30px;
+      margin: 0px auto 0px auto;
+      display: none;
+      position: absolute;
+      top: 0%;
+
+  }
+
+.name {
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px auto 0px auto;
+    display: none;
+    position: absolute;
+    top: 50%;
+  }
+
+.lead {
+    width: 300px;
+    text-align: center;
+    font-family: serif;
+    font-size: 15px;
+    margin: auto;
+    display: none;
+    position: absolute;
+    top: 70%;
+}
+
+.work {
+    width: 400px;
+    text-align: center;
+    margin: 250px auto 0px auto;
+}
+
+
+.swiper-container {
+    height: 200px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    display:block;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+
+}
+
+
+.profile {
+    width: 200px;
+    text-align: center;
+    margin: 300px auto 0px auto;
+    position: relative;
+}
+
+.profile_img {
+    width: 200px;
+    height: 200px;
+    background-image: url(../image/profile.jpg);
+    border-radius: 50%;
+    position: absolute;
+    margin: 0px auto 0px auto;
+}
+
+.profile_txt {
+    width: 200px;
+    text-align: center;
+    margin: 300px auto 0px auto;
+    position: relative;
+    margin: 200px auto 0px auto;
+}
+.skill {
+    width: 300px;
+    text-align: center;
+    margin: 250px auto 0px auto;
+}
+
+.contact {
+    width: 300px;
+    text-align: center;
+    margin: 250px auto 0px auto;
+}
+
+  @media screen and (min-width:781px){
+    /*画面幅が781px以上の時*/
+  }
+}
